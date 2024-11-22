@@ -33,9 +33,18 @@ Alternatively, you can run individual components of the framework by running:
 - `python3 -m Model_and_Training.MultiSubjectTrain`
 - `python3 -m Model_and_Training.TransferPreTrained`
 
-## Citation (Coming soon)
+## Citation 
 
-We hope that you will find this code useful. If you do, please consider citing our work.
+We hope that you will find this code useful. If you do, please consider citing our work as:
+
+```bibtex
+@inproceedings{
+    mentzelopoulos2024neural,
+    title={Neural decoding from stereotactic EEG: accounting for electrode variability across subjects},
+    author={Mentzelopoulos, Georgios and Chatzipantazis, Evangelos and Ramayya, Ashwin G and Hedlund, Michelle and Buch, Vivek and Daniilidis, Kostas and Kording, Konrad and Vitale, Flavia},
+    booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems}
+    }
+```
 
 ## Acknowledgments
 We would like to thank the authors of the following repositories for making their code publicly available.
