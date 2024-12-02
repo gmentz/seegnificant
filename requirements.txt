@@ -12,3 +12,4 @@ wandb~=0.18.3
 webcolors~=24.8.0
 wheel~=0.41.2
 gdown~=5.2.0
+numpy
