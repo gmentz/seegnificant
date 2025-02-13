@@ -38,12 +38,17 @@ Alternatively, you can run individual components of the framework by running:
 We hope that you will find this code useful. If you do, please consider citing our work as:
 
 ```bibtex
-@inproceedings{
-    mentzelopoulos2024neural,
-    title={Neural decoding from stereotactic EEG: accounting for electrode variability across subjects},
-    author={Mentzelopoulos, Georgios and Chatzipantazis, Evangelos and Ramayya, Ashwin G and Hedlund, Michelle and Buch, Vivek and Daniilidis, Kostas and Kording, Konrad and Vitale, Flavia},
-    booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems}
-    }
+@inproceedings{mentzelopoulos2024neural,
+ author = {Mentzelopoulos, Georgios and Chatzipantazis, Evangelos and Ramayya, Ashwin and Hedlund, Michelle and Buch, Vivek and Daniilidis, Kostas and Kording, Konrad and Vitale, Flavia},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {108600--108624},
+ publisher = {Curran Associates, Inc.},
+ title = {Neural decoding from stereotactic EEG: accounting for electrode variability across subjects},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/c473b9c8897f50203fa23570687c6b30-Paper-Conference.pdf},
+ volume = {37},
+ year = {2024}
+}
 ```
 
 ## Acknowledgments
