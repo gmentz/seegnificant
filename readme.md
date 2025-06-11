@@ -10,7 +10,7 @@ we cannot make our dataset public. To help you structure your data in a way that
 we provide synthetic (fake) sEEG data for 3 "subjects".  You can find the synthetic data 
 [here](https://drive.google.com/drive/folders/1UFSRT3wGNYZAXdpndDyRHr-CmjRQPlbM?usp=sharing).
 
-## Installation:
+## Installation
 
 In a clean virtual environment with python 3.8.10, run the following to clone the repository and download the synthetic data:
 
@@ -21,7 +21,7 @@ pip install -e .
 gdown --folder https://drive.google.com/drive/folders/1UFSRT3wGNYZAXdpndDyRHr-CmjRQPlbM -O data
 ```
 
-## Getting started:
+## Getting started
 
 For an easy-to-follow introduction to our framework, please follow along the `example.ipynb`. 
 
@@ -33,7 +33,15 @@ Alternatively, you can run individual components of the framework by running:
 - `python3 -m Model_and_Training.MultiSubjectTrain`
 - `python3 -m Model_and_Training.TransferPreTrained`
 
-## Citation 
+## Pretrained weights
+The pretrained weights of seegnificant, trained on the combined data from 21 subjects across 5 different data splits, are available in the ```models``` folder. For completeness, each set of saved weights includes the subject-specific ```TaskHeads``` used during pretraining (refer to Section 4.3 of the paper). To load the model weights for any number of subjects, use the following code:
+```
+model = seegnificant(2, 1, XX)  # XX is the number of subjects in your study
+model.load_state_dict(torch.load('./models/pretrained_seegnificant_21_subjets_seed_YY.pt'), strict=False) # YY is the seed from {0, 1, 2, 3, 4} 
+```
+Caution: Unless you are replicating the results reported in Section 4.3 of our paper, the weights of the ```taskHeads``` layer (the subject-specific MLPs) should be finetuned to your own dataset.
+
+## Citation:
 
 We hope that you will find this code useful. If you do, please consider citing our work as:
 
